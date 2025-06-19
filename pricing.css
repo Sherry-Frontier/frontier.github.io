@@ -1,0 +1,1067 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 1000;
+    margin: 20px auto;
+}
+
+nav ul {
+    border: 1.5px solid black;
+    border-radius: 20px;
+    padding: 25px 150px;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+li a {
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+li a:hover {
+    color: #00c800; 
+    transform: scale(1.1); /* Zooms in 10% */
+}
+/* end of navigation menus */
+
+/* end of navigation menus */
+/* === Responsive for smaller screens === */
+@media (max-width: 455px) {
+
+    html {
+        overflow-x: hidden;
+        width: 100%;
+      }
+    nav ul {
+        padding: 20px 30px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: -2px;
+        top: 100px;
+        left: 20px;
+        right: 20px;
+    } }
+
+.services-section {
+    background-color: #e1f7e2;
+    /* Light green */
+    text-align: center;
+    padding: 100px 20px 80px;
+    border-bottom-left-radius: 30% 20%;
+    border-bottom-right-radius: 30% 20%;
+}
+
+.services-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 0 20px;
+    letter-spacing: -2.8px;
+}
+
+.services-section p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.recruitment-solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    /* centers the container */
+    padding: 20px;
+    position: relative;
+    top: 30px;
+}
+
+.recruitment-solution img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.recruitment-solution img:hover{
+    transform: scale(1.1); /* Zooms in 10% on hover */
+  }
+.recruitment-solution h2{
+    font-size: 42px;
+    letter-spacing: -2px;
+    position: relative;
+    top: -30px;
+}
+
+.recruitment-solution p{
+    width: 700px;
+    position: relative;
+    top: -70px;
+}
+
+.recruitment-solution a {
+    margin-top: 10px;
+    padding: 10px 60px;
+    background-color: #00c800;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; 
+    position: relative;
+    top: -80px;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+.recruitment-solution a:hover{
+    transform: scale(1.1); /* Zooms in 10% */
+}
+
+/* end of recutiment solutions */
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+@keyframes smoothGlow {
+    0% {
+      box-shadow: 0 0 5px #c7db00, 0 0 10px #015c5e;
+    }
+    50% {
+      box-shadow: 0 0 15px #c7db00, 0 0 25px #015c5e;
+    }
+    100% {
+      box-shadow: 0 0 5px #c7db00, 0 0 10px #015c5e;
+    }
+  }
+  
+  .service-card {
+    position: relative;
+    padding: 20px 25px;
+    width: 300px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    border-radius: 20px;
+    background:
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(55deg, #c7db00, #015c5e) border-box;
+    border: 6px solid transparent;
+  
+    /* Smooth Glow Effect */
+    animation: smoothGlow 3s ease-in-out infinite;
+  }
+  
+
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    
+}
+
+.service-card p {
+    font-size: 14px;
+    margin: 1px 0;
+    line-height: 1.1;
+    position: relative;
+    top: -10px;
+}
+
+
+
+.service-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.service-card li {
+    font-size: 14px;
+    margin-bottom: -1px;
+    line-height: 1.3;
+    margin-bottom: -3px;
+    position: relative;
+    top: -12px;
+}
+
+.start-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00b300;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+
+/* end of recruitment solutions with pricing plans */
+
+.ecommerce-solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    /* centers the container */
+    padding: 20px;
+    position: relative;
+    top: 30px;
+}
+
+.ecommerce-solution img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.ecommerce-solution img:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+
+.ecommerce-solution h2 {
+    font-size: 42px;
+    letter-spacing: -2px;
+    position: relative;
+    top: -30px;
+}
+
+.ecommerce-solution p {
+    width: 700px;
+    position: relative;
+    top: -70px;
+}
+
+.ecommerce-solution a {
+    margin-top: 10px;
+    padding: 10px 60px;
+    background-color: #00c800;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    position: relative;
+    top: -80px;
+    transition: transform 0.3s ease;
+}
+
+.ecommerce-solution a:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+/* end of recutiment solutions */
+
+.eservices-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+@keyframes smoothGlow {
+    0% {
+      box-shadow: 0 0 5px #c7db00, 0 0 10px #015c5e;
+    }
+    50% {
+      box-shadow: 0 0 15px #c7db00, 0 0 25px #015c5e;
+    }
+    100% {
+      box-shadow: 0 0 5px #c7db00, 0 0 10px #015c5e;
+    }
+  }
+  
+  .service-card-2 {
+    position: relative;
+    padding: 20px 25px;
+    width: 300px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    border-radius: 20px;
+    background:
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(25deg, #c7db00, #015c5e) border-box;
+    border: 6px solid transparent;
+  
+    /* Smooth Glow Effect */
+    animation: smoothGlow 4s ease-in-out infinite;
+  }
+  
+
+
+.service-card-2 h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+
+}
+
+.service-card-2 p {
+    font-size: 14px;
+    margin: 1px 0;
+    line-height: 1.1;
+    position: relative;
+    top: -10px;
+}
+
+
+
+.service-card-2 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.service-card-2 li {
+    font-size: 14px;
+    margin-bottom: -1px;
+    line-height: 1.3;
+    margin-bottom: -3px;
+    position: relative;
+    top: -12px;
+}
+
+.start-btn-2 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00b300;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.start-btn-2:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+/* end of ecommerce solution with pricing plans */
+
+.Business-solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    /* centers the container */
+    padding: 20px;
+    position: relative;
+    top: 30px;
+}
+
+.Business-solution img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.Business-solution img:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+
+.Business-solution h2 {
+    font-size: 42px;
+    letter-spacing: -2px;
+    position: relative;
+    top: -30px;
+}
+
+.Business-solution p {
+    width: 700px;
+    position: relative;
+    top: -70px;
+}
+
+.Business-solution a {
+    margin-top: 10px;
+    padding: 10px 60px;
+    background-color: #00c800;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    position: relative;
+    top: -80px;
+    transition: transform 0.3s ease;
+}
+
+.Business-solution a:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+
+/* end of recutiment solutions */
+
+.business-services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+@keyframes smoothGlow {
+    0% {
+      box-shadow: 0 0 5px #c7db00, 0 0 10px #015c5e;
+    }
+    50% {
+      box-shadow: 0 0 15px #c7db00, 0 0 25px #015c5e;
+    }
+    100% {
+      box-shadow: 0 0 5px #c7db00, 0 0 10px #015c5e;
+    }
+  }
+  
+  .service-card-3 {
+    position: relative;
+    padding: 20px 25px;
+    width: 300px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    border-radius: 20px;
+    background:
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(25deg, #c7db00, #015c5e) border-box;
+    border: 6px solid transparent;
+  
+    /* Smooth Glow Effect */
+    animation: smoothGlow 4s ease-in-out infinite;
+  }
+  
+
+
+.service-card-3 h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+
+}
+
+.service-card-3 p {
+    font-size: 14px;
+    margin: 1px 0;
+    line-height: 1.1;
+    position: relative;
+    top: -10px;
+}
+
+
+
+.service-card-3 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.service-card-3 li {
+    font-size: 14px;
+    margin-bottom: -1px;
+    line-height: 1.3;
+    margin-bottom: -3px;
+    position: relative;
+    top: -12px;
+}
+
+.start-btn-3 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00b300;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.start-btn-3:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+
+/* end of business solutions with pricing plans */
+
+.laptop-guy {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    bottom: -70px;
+    left: 255px;
+}
+
+.laptop {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.laptop-guy:hover .laptop {
+    transform: scale(1.1); /* Zooms in 10% on hover */
+  }
+
+.call-schedule {
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #00c800;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    top: -200px;
+    left: 682px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.call-schedule a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.call-schedule:hover {
+    transform: scale(1.1); /* Zooms in on hover */
+  }
+.start-scheduling {
+    position: relative;
+    bottom: 205px;
+    left: 685px;
+    width: 300px;
+    letter-spacing: -0.5px;
+    word-spacing: 2px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.1;
+}
+
+/* end of 2nd last footere */
+
+.growvy-growth {
+    width: 50vmin;
+    position: relative;
+    top: -950px;
+    left: -50px;
+}
+
+.growth-plan {
+    font-size: 50px;
+    width: 70vmin;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    line-height: 39.9px;
+    position: relative;
+    bottom: -950px;
+    left: 222px;
+}
+
+.growvy-efficiency {
+    position: relative;
+    bottom: -920px;
+    left: 228px;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+    font-size: 15px;
+    width: 220px;
+    line-height: 1.1;
+}
+
+.items-info {
+    display: inline-block;
+    position: relative;
+    top: 770px;
+    left: 555px;
+}
+
+.list-items {
+    font-weight: bolder;
+}
+
+/* social media icons */
+.custom-social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    top: 730px;
+    left: 150px;
+}
+
+.custom-social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+/* Facebook */
+.custom-social-icons .facebook {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* Instagram */
+.custom-social-icons .instagram {
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%);
+}
+
+/* LinkedIn */
+.custom-social-icons .linkedin {
+    background: #0077b5;
+}
+
+/* Hover effect */
+.custom-social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* 5 star reviews */
+.star-rating {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    top: 670px;
+    left: 482px;
+}
+
+.star-rating i {
+    color: green;
+    font-size: 20px;
+}
+
+.curly-arrow {
+    width: 210px;
+    height: 210px;
+    position: relative;
+    bottom: -470px;
+    left: 900px;
+}
+
+.green-arrow {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply; 
+    transition: transform 0.3s ease;
+}
+.curly-arrow:hover .green-arrow {
+    transform: scale(1.1); /* Zooms in 10% on hover */
+  }
+
+/* end of pricing page part */
+
+@media screen and (max-width: 768px) {
+    .services-section {
+        padding: 60px 15px 50px;
+        border-bottom-left-radius: 20% 10%;
+        border-bottom-right-radius: 20% 10%;
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
+        letter-spacing: -1.5px;
+    }
+
+    .services-section p {
+        font-size: 0.95rem;
+        max-width: 90%;
+        line-height: 1.4;
+    } 
+}
+
+/* end of responsive part */
+
+@media screen and (max-width: 768px) {
+    .recruitment-solution {
+        padding: 15px;
+        top: 10px;
+    }
+
+    .recruitment-solution img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .recruitment-solution h2 {
+        font-size: 32px;
+        letter-spacing: -1px;
+        top: -20px;
+    }
+
+    .recruitment-solution p {
+        width: 90%;
+        font-size: 14px;
+        top: -50px;
+    }
+
+    .recruitment-solution a {
+        padding: 8px 40px;
+        font-size: 14px;
+        top: -60px;
+    }
+}
+
+/* end of responsive part  */
+
+@media screen and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 25px;
+    }
+
+    .service-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+        top: -8px;
+    }
+
+    .service-card li {
+        font-size: 13px;
+        top: -10px;
+    }
+
+    .start-btn {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+
+/* end of responsive part  */
+
+@media screen and (max-width: 768px) {
+    .ecommerce-solution {
+        max-width: 90%;
+        padding: 15px;
+        top: 10px;
+    }
+
+    .ecommerce-solution img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ecommerce-solution h2 {
+        font-size: 28px;
+        top: -20px;
+        letter-spacing: -1px;
+    }
+
+    .ecommerce-solution p {
+        width: 100%;
+        font-size: 14px;
+        top: -50px;
+    }
+
+    .ecommerce-solution a {
+        padding: 10px 40px;
+        font-size: 14px;
+        top: -60px;
+    }
+
+    .eservices-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 25px;
+    }
+
+    .service-card-2 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .service-card-2 h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .service-card-2 p {
+        font-size: 13px;
+        top: -8px;
+    }
+
+    .service-card-2 li {
+        font-size: 13px;
+        top: -10px;
+    }
+
+    .start-btn-2 {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+
+/* end of responsive part  */
+
+@media screen and (max-width: 768px) {
+    .Business-solution {
+        max-width: 90%;
+        padding: 15px;
+        top: 10px;
+    }
+
+    .Business-solution img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .Business-solution h2 {
+        font-size: 28px;
+        top: -20px;
+        letter-spacing: -1px;
+    }
+
+    .Business-solution p {
+        width: 100%;
+        font-size: 14px;
+        top: -50px;
+    }
+
+    .Business-solution a {
+        padding: 10px 40px;
+        font-size: 14px;
+        top: -60px;
+    }
+
+    .business-services-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 25px;
+    }
+
+    .service-card-3 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .service-card-3 h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .service-card-3 p {
+        font-size: 13px;
+        top: -8px;
+    }
+
+    .service-card-3 li {
+        font-size: 13px;
+        top: -10px;
+    }
+
+    .start-btn-3 {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+
+/* end of responsive part  */
+
+@media screen and (max-width: 768px) {
+    .laptop-guy {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .laptop {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .start-scheduling {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 85vw;
+        font-size: 14px;
+        word-spacing: 1px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .call-schedule {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 10px 15px;
+        width: 30%;
+        font-size: 13px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .call-schedule a {
+        font-size: 11px;
+    }
+}
+
+/* end of responsive part  */
+
+@media screen and (max-width: 455px) {
+    .growvy-growth {
+        width: 100%;
+        position: relative;
+        top: 100px;
+        left: -60px;
+        margin: 0 auto;
+    }
+
+    .growth-plan {
+        font-size: 30px;
+        width: 90vw;
+        position: relative;
+        bottom: 0;
+        left: 60px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .growvy-efficiency {
+        font-size: 12px;
+        width: 30%;
+        position: relative;
+        bottom: 15px;
+        left: 50px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .items-info {
+        position: relative;
+        top: -10px;
+        left: 190px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .custom-social-icons {
+        position: relative;
+        top: 0;
+        left: 70px;
+        margin: 20px auto;
+        flex-wrap: wrap;
+    }
+
+    .custom-social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .star-rating {
+        position: relative;
+        top: 0;
+        left: 70px;
+        margin: 20px auto;
+    }
+
+    .star-rating i {
+        font-size: 12px;
+    }
+
+    .curly-arrow {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        bottom: 0;
+        left: 50px;
+        margin: 20px auto;
+    }
+
+    .green-arrow {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        mix-blend-mode: multiply;
+    }
+}
+
+/* end of responsive part  */

@@ -1,0 +1,1011 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 1000;
+  margin: 20px auto;
+}
+
+nav ul {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 25px 150px;
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+li a {
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+li a:hover {
+  color: #00c800;
+  transform: scale(1.1); /* Zooms in 10% */
+}
+
+/* end of navigation menus */
+
+/* === Responsive for smaller screens === */
+@media (max-width: 455px) {
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  nav ul {
+    padding: 20px 30px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: -2px;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.services-section {
+  background-color: #e1f7e2;
+  /* Light green */
+  text-align: center;
+  padding: 100px 20px 80px;
+  border-bottom-left-radius: 30% 20%;
+  border-bottom-right-radius: 30% 20%;
+}
+
+.services-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 20px;
+  letter-spacing: -2.8px;
+}
+
+.services-section p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.service-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-top: 140px;
+}
+.hiring,
+.commerce,
+.business-manging {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 40vmin;
+}
+.service-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 260px;
+}
+.search-img,
+.mobile-shopping,
+.man-searching {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  bottom: 350px;
+  
+}
+.mobile-shopping{
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.mobile-shopping:hover {
+  transform: scale(1.1); /* Zooms in 10% on hover */
+}
+
+.search-img {
+  position: relative;
+  left: 55px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+ 
+}
+.search-img:hover {
+  transform: scale(1.1); /* Zooms in 10% on hover */
+}
+
+.man-searching {
+  position: relative;
+  left: -59px;
+  top: -358px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+  
+}
+.man-searching:hover {
+  transform: scale(1.1); /* Zooms in 10% on hover */
+}
+
+
+.hiring-description,
+.commerce-description,
+.business-description {
+  position: relative;
+  top: -20px;
+}
+
+.button-plan {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  bottom: 100px;
+  
+}
+.plan-button-1 {
+  display: inline-block;
+  padding: 10px 70px;
+  background-color: #00c800;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  bottom: 28px;
+  left: 200px;
+  transition: transform 0.3s ease;
+}
+
+.plan-button-1:hover {
+  transform: scale(1.1); /* Zooms in on hover */
+}
+
+.plan-button-2 {
+  display: inline-block;
+  padding: 10px 70px;
+  background-color: #00c800;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  bottom: 28px;
+  left: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+.plan-button-2:hover {
+  transform: scale(1.1); /* Zooms in on hover */
+}
+
+.plan-button-3 {
+  display: inline-block;
+  padding: 10px 70px;
+  background-color: #00c800;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  bottom: 28px;
+  left: -200px;
+  transition: transform 0.3s ease;
+}
+.plan-button-3:hover {
+  transform: scale(1.1); /* Zooms in on hover */
+}
+
+.join-heading {
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.button-price {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -30px;
+}
+.view-price {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: #00c800;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  bottom: 28px;
+  left: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+.view-price:hover {
+  transform: scale(1.1); /* Zooms in on hover */
+}
+
+/* end of page 2 */
+
+.problems-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.text-content {
+  max-width: 400px;
+}
+
+.problems-heading {
+  font-size: 35px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.problems-description {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+  width: 280px;
+  position: relative;
+  top: -20px;
+  word-spacing: -1px;
+}
+
+.thinking-image {
+  max-width: 350px;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.image-content:hover .thinking-image {
+  transform: scale(1.1); /* Zooms in 10% on hover */
+}
+
+/* end of problem heading */
+
+.solution-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 20px;
+  flex-wrap: wrap;
+  /* Makes it responsive */
+}
+
+.image-side {
+  flex: 1;
+  max-width: 400px;
+}
+
+.solution-image {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  /* Optional green bg effect */
+  padding: 15px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.image-side:hover .solution-image {
+  transform: scale(1.1); /* Zooms in 10% on hover */
+}
+
+.text-side {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.solution-heading {
+  font-size: 42px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  position: relative;
+  left: -80px;
+}
+
+.solution-description {
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 1.6;
+  width: 435px;
+  position: relative;
+  text-align: right;
+  left: -55px;
+  bottom: 20px;
+}
+
+.start-button {
+  display: inline-block;
+  background-color: #00c800;
+  color: white;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1); /* Zooms in on hover */
+}
+
+/* end of growvy solution */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  box-sizing: border-box;
+}
+
+.text {
+  max-width: 550px;
+}
+
+.text h2 {
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 0 30px 0;
+}
+
+.text p {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  word-spacing: 2px;
+  margin: 0;
+  color: #000;
+  position: relative;
+  bottom: 20px;
+}
+
+.image img {
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  left: -180px;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1); /* Zooms in 10% */
+}
+
+/* end of ecommerce business */
+
+.growvy-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  box-sizing: border-box;
+}
+
+.growvy-image img {
+  max-width: 350px;
+  height: auto;
+  position: relative;
+  bottom: 80px;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+.growvy-image img:hover {
+  color: #00c800;
+  text-shadow: 0 0 5px rgba(0, 200, 0, 0.4);
+  transform: scale(1.1); /* Zooms in 10% */
+}
+
+.growvy-text {
+  max-width: 600px;
+  padding-left: 60px;
+}
+
+.growvy-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 25px 0;
+  letter-spacing: -0.5px;
+  position: relative;
+  left: -250px;
+  bottom: 80px;
+}
+
+.growvy-text p {
+  font-size: 18px;
+  text-align: right;
+  font-weight: 400;
+  line-height: 1.6;
+  word-spacing: 1px;
+  margin: 0 0 30px 0;
+  color: #000;
+  position: relative;
+  left: -250px;
+  bottom: 90px;
+}
+
+.growvy-text button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00c400;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  left: 20px;
+  bottom: 100px;
+  transition: transform 0.3s ease;
+}
+
+.growvy-text button:hover {
+  background-color: #009e00;
+  transform: scale(1.1); /* Zooms in on hover */
+}
+
+/* end of growvy solution */
+
+.laptop-guy {
+  width: 450px;
+  height: 450px;
+  position: relative;
+  bottom: 20px;
+  left: 75px;
+}
+
+.laptop {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.laptop-guy:hover .laptop {
+  transform: scale(1.1); /* Zooms in 10% on hover */
+}
+
+.call-schedule {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #00c800;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  top: -340px;
+  left: 622px;
+  text-align: center;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.call-schedule:hover {
+  transform: scale(1.1); /* Zooms in on hover */
+}
+
+.call-schedule a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16.5px;
+}
+
+.start-scheduling {
+  position: relative;
+  bottom: 345px;
+  left: 625px;
+  width: 300px;
+  letter-spacing: -0.5px;
+  word-spacing: 2px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.1;
+}
+
+/* end of 2nd last footer */
+.growvy-growth {
+  width: 50vmin;
+  position: relative;
+  top: -380px;
+  left: 50px;
+}
+
+.growth-plan {
+  font-size: 50px;
+  width: 70vmin;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  line-height: 39.9px;
+  position: relative;
+  top: 300px;
+  left: 145px;
+}
+
+.growvy-efficiency {
+  position: relative;
+  bottom: -270px;
+  left: 150px;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+  font-size: 15px;
+  width: 220px;
+  line-height: 1.1;
+}
+
+.items-info {
+  display: inline-block;
+  position: relative;
+  top: 135px;
+  left: 515px;
+}
+
+.list-items {
+  font-weight: bolder;
+}
+
+/* social media icons */
+.custom-social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+  top: 90px;
+  left: 75px;
+}
+
+.custom-social-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+/* Facebook */
+.custom-social-icons .facebook {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* Instagram */
+.custom-social-icons .instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+/* LinkedIn */
+.custom-social-icons .linkedin {
+  background: #0077b5;
+}
+
+/* Hover effect */
+.custom-social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* 5 star reviews */
+.star-rating {
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  top: 30px;
+  left: 450px;
+}
+
+.star-rating i {
+  color: green;
+  font-size: 20px;
+}
+
+.curly-arrow {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  bottom: 160px;
+  left: 800px;
+}
+
+.green-arrow {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.curly-arrow:hover .green-arrow {
+  transform: scale(1.1); /* Zooms in 10% on hover */
+}
+/* end of serivce part  */
+
+@media screen and (max-width: 768px) {
+  .services-section {
+    padding: 60px 15px 50px;
+    border-bottom-left-radius: 20% 10%;
+    border-bottom-right-radius: 20% 10%;
+  }
+
+  .services-section h2 {
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+  }
+
+  .services-section p {
+    font-size: 0.95rem;
+    max-width: 100%;
+    line-height: 1.4;
+  }
+}
+/* end of responsive part  */
+
+@media screen and (max-width: 768px) {
+    .service-container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 60px;
+      gap: 90px;
+    }
+  
+    .hiring,
+    .commerce,
+    .business-manging {
+      width: 80%;
+      padding: 60px 10px 40px;
+    }
+  
+    .service-img {
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: -620px;
+    }
+  
+    .search-img,
+    .mobile-shopping,
+    .man-searching {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .mobile-shopping{
+        position: relative;
+        top: -120px;
+    }
+    .man-searching{
+        position: relative;
+        bottom: -100px;
+        right: -10px;
+    }
+  
+    .search-img,
+    .man-searching {
+      left: unset;
+      top: unset;
+    }
+  
+    .hiring-description,
+    .commerce-description,
+    .business-description {
+      top: 0;
+      padding: 0 10px;
+    }
+  
+    .button-plan {
+      flex-direction: column;
+      gap: 310px;
+      bottom: 1060px;
+      margin-top: 20px;
+    }
+  
+    .plan-button-1,
+    .plan-button-2,
+    .plan-button-3 {
+      left: 0;
+      bottom: 0;
+      padding: 10px 40px;
+      width: auto;
+      margin: 0 auto;
+      position: static;
+    }
+    .plan-button-3{
+        position: relative;
+        top: -20px;
+    }
+  }
+  /* end of responsive part  */
+
+  @media screen and (max-width: 768px) {
+    .join-heading {
+      font-size: 30px;
+      padding: 0 20px;
+      position: relative;
+      bottom: 900px;
+    }
+  
+    .view-price {
+      font-size: 14px;
+      padding: 10px 30px;
+      position: relative;
+      bottom: 900px;
+    }
+  }
+
+  /* end of responsive part  */
+
+
+  @media (max-width: 1024px) {
+    .problems-container,
+    .solution-container,
+    .container,
+    .growvy-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 40px;
+      position: relative;
+      bottom: 900px;
+    }
+  
+    .text-content,
+    .solution-description,
+    .solution-heading,
+    .text-side,
+    .image-side,
+    .text,
+    .growvy-text {
+      max-width: 90% !important;
+      width: 100% !important;
+      text-align: center !important;
+      position: static !important;
+      left: 0 !important;
+      bottom: 0 !important;
+    }
+  
+    .solution-image,
+    .thinking-image,
+    .image img,
+    .growvy-image img {
+      max-width: 90%;
+      position: relative;
+      left: 10px;
+      bottom: 80px;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    .text h2,
+    .solution-heading,
+    .growvy-text h1 {
+      font-size: 32px !important;
+      text-align: center !important;
+    }
+  
+    .text p,
+    .solution-description,
+    .growvy-text p {
+      font-size: 16px;
+      text-align: center !important;
+      margin-bottom: 20px;
+    }
+  
+    .growvy-text button,
+    .start-button {
+      display: block;
+      margin: 20px auto 0 auto;
+      position: static;
+      width: 50%;
+    }
+
+    .growvy-text h1{
+        position: relative;
+        left: -20px;
+        top: -70px;
+    }
+
+    .growvy-text p{
+        position: relative;
+        left: -20px;
+    }
+
+    .growvy-text button{
+        position: relative;
+        left: -20px;
+    }
+  }
+
+  /* responsive part done  */
+
+  @media screen and (max-width: 768px) {
+    .laptop-guy {
+      width: 250px;
+      height: 250px;
+      position: relative;
+      bottom: 800px;
+      left: 0;
+      margin: 0 auto;
+    }
+  
+    .laptop {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+    .start-scheduling {
+      position: relative;
+      bottom: 880px;
+      left: 0;
+      width: 85vw;
+      font-size: 14px;
+      word-spacing: 1px;
+      text-align: center;
+      margin: 10px auto;
+    }
+  
+    .call-schedule {
+      position: relative;
+      top: -760px;
+      left: 0;
+      width: 40%;
+      padding: 10px 25px;
+      font-size: 13px;
+      display: block;
+      margin: 20px auto;
+    }
+  
+    .call-schedule a {
+      font-size: 14px;
+    }
+  }
+
+  /* end of responsive part  */
+
+  @media screen and (max-width: 455px) {
+    .growvy-growth {
+      width: 100%;
+      position: relative;
+      top: -700px;
+      left: -60px;
+      margin: 0 auto;
+    }
+  
+    .growth-plan {
+      font-size: 30px;
+      width: 90vw;
+      position: relative;
+      top: 0;
+      left: 60px;
+      text-align: center;
+      line-height: 1.2;
+    }
+  
+    .growvy-efficiency {
+      font-size: 12px;
+      width: 30%;
+      position: relative;
+      bottom: 15px;
+      left: 50px;
+      text-align: center;
+      margin: 10px auto;
+    }
+  
+    .items-info {
+      position: relative;
+      top: -10px;
+      left: 190px;
+      margin: 20px auto;
+      display: block;
+    }
+  
+    .custom-social-icons {
+      position: relative;
+      top: 0;
+      left: 70px;
+      margin: 20px auto;
+      flex-wrap: wrap;
+    }
+  
+    .custom-social-icons a {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+    }
+  
+    .star-rating {
+      position: relative;
+      top: 0;
+      left: 70px;
+      margin: 20px auto;
+    }
+  
+    .star-rating i {
+      font-size: 12px;
+    }
+  
+    .curly-arrow {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      bottom: 0;
+      left: 50px;
+      margin: 20px auto;
+    }
+  
+    .green-arrow {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+  }
+  /* end of responsive part done  */
+  
+  
+  
+  
